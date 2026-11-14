@@ -24,8 +24,10 @@ When a human points you at this repo to start a new project:
    scripts/setup-labels.sh <owner>/<new-name>
    ```
    (On Windows PowerShell: `scripts/setup-labels.ps1 -Repo <owner>/<new-name>`.)
-3. **Fill in CLAUDE.md.** Replace every `<placeholder>` with the project's name and summary,
-   and delete the template comment at the top.
+3. **Adapt CLAUDE.md to the project. This is required.** It ships generic, with a warning
+   notice at the top. Replace every `<placeholder>` with the project's real name, summary,
+   specs and commands, add any project-specific rules, and delete the notice. If you don't
+   know what the project is, ask the human; don't invent it.
 4. **Write the first specs** from what the human has decided so far (e.g. `product/target-users.md`,
    `product/features.md`, `tech/stack.md`), each from `specs/_template.md`, and add them to the
    index in `specs/README.md` and to the list in CLAUDE.md. Decisions made in chat are recorded

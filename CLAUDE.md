@@ -2,10 +2,19 @@
 
 Guidance for Claude (and any AI agent) working in this repository.
 
-<!--
-TEMPLATE: when starting a new project from this template, follow "Starting a new project" in
-README.md, then replace every <placeholder> in this file and delete this comment.
--->
+> [!WARNING]
+> **This file is still the generic template.** It must be adapted to this project before any
+> other work.
+>
+> If you are an agent and this notice is still here, your first task is to finish the setup in
+> [README.md](README.md) ("Starting a new project"). In this file that means:
+> - Replace every `<placeholder>` with this project's real name, summary, specs and commands.
+> - Adjust the rules to the project if needed (e.g. extra hard rules, privacy or legal concerns),
+>   and record each adjustment in a spec with "chat" or the issue as its source.
+> - Delete this notice.
+>
+> If the human hasn't told you what the project is yet, ask them before filling anything in.
+> Don't invent a project description.
 
 ## Project: <Project name>
 
