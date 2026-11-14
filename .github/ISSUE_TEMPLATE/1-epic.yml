@@ -1,0 +1,33 @@
+name: Epic
+description: A goal that needs several child issues to reach.
+title: "[Epic-<#>] "
+labels: ["type:epic", "status:needs-criteria"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        After creating the issue, replace `<#>` in the title with this issue's number.
+        See work_instructions.md, section 3.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What we want to achieve and why.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Testable, specific and complete. Together they define "done" for the whole epic.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: children
+    attributes:
+      label: Children
+      description: Child issues, as a task list (`- [ ] #12`). Can be filled in later.
+      value: |
+        - [ ]

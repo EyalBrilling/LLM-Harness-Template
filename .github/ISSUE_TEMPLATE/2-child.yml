@@ -1,0 +1,57 @@
+name: Child issue
+description: One focused piece of work under an epic (feature, bug, chore, docs or research).
+title: "[Epic-<epic#>][<Type>-<#>] "
+labels: ["status:needs-criteria"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        After creating the issue:
+        1. Replace `<epic#>`, `<Type>` and `<#>` in the title, e.g. `[Epic-4][Feature-7] Signup form`.
+        2. Add the matching `type:` label.
+        3. Link it as a sub-issue of its epic.
+
+        See work_instructions.md, section 3.
+  - type: input
+    id: parent
+    attributes:
+      label: Parent epic
+      placeholder: "#4"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Feature
+        - Bug
+        - Chore
+        - Docs
+        - Research
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What
+      description: The piece of work, and how it serves the epic.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Testable, specific and complete. Together they define "done".
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: dropdown
+    id: human-approval
+    attributes:
+      label: Needs human approval to merge?
+      description: Pick "Yes" if a human must approve this PR. Then also add the `needs-human-approval` label.
+      options:
+        - "No"
+        - "Yes"
